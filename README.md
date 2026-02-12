@@ -7,6 +7,8 @@
 
 修改左侧边栏的ai行为规则可以赋予ta们身份特征与关系
 
+如果想要本地查看历史记录，可以将最后一段的“历史查询功能”与chat_with_api中对log_conversation的调用的注释取消
+
 English:
 This is a very simple AI chat group! It's also very easy to run!
 
@@ -17,5 +19,6 @@ Then run the run.bat file to enter the chat interface.
 The default group configuration consists of two DeepSeek models (called via API), but you can also manually add other members.
 
 Modifying the AI behavior rules in the left sidebar can give them character traits and relationships.
+
 
 
