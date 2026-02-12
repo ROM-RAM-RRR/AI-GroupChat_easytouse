@@ -1,10 +1,10 @@
-ÖĞÎÄ£º
-ÕâÊÇÒ»¸ö·Ç³£¼òµ¥µÄAIÁÄÌìÈº×é£¡ÔËĞĞÆğÀ´Ò²ºÜ¼òµ¥£¡
-ÏÂÔØºó£¬ÏÈĞèÒªÔÚ.env(¿ÉÒÔÓÃVSCode´ò¿ª)ÖĞÕ³ÌùÄãµÄAPI_KEYÓëBASE_URL
-ÒÔ¹ÜÀíÔ±Éí·İÔËĞĞconfigure.batÒÔ½øĞĞ»·¾³ÅäÖÃ£¨ĞèÒªÒÑÓĞpython£©
-È»ºóÔËĞĞrun.batÎÄ¼ş¼´¿É½øÈëÁÄÌì½çÃæ¡£
-Ä¬ÈÏÈº×éÅäÖÃÊÇÁ½Ö»deepseek£¨ÒÔapiĞÎÊ½µ÷ÓÃ£©£¬µ±È»Ò²¿ÉÒÔÊÖ¶¯¼ÓÈëÆäËû³ÉÔ±
-ĞŞ¸Ä×ó²à±ßÀ¸µÄaiĞĞÎª¹æÔò¿ÉÒÔ¸³ÓètaÃÇÉí·İÌØÕ÷Óë¹ØÏµ
+ä¸­æ–‡ï¼š
+è¿™æ˜¯ä¸€ä¸ªéå¸¸ç®€å•çš„AIèŠå¤©ç¾¤ç»„ï¼è¿è¡Œèµ·æ¥ä¹Ÿå¾ˆç®€å•ï¼
+ä¸‹è½½(å³ä¸Šè§’Code-Download ZIP)åï¼Œå…ˆéœ€è¦åœ¨.env(å¯ä»¥ç”¨VSCodeæ‰“å¼€)ä¸­ç²˜è´´ä½ çš„API_KEYä¸BASE_URL
+ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œconfigure.batä»¥è¿›è¡Œç¯å¢ƒé…ç½®ï¼ˆéœ€è¦å·²æœ‰pythonï¼‰
+ç„¶åè¿è¡Œrun.batæ–‡ä»¶å³å¯è¿›å…¥èŠå¤©ç•Œé¢ã€‚
+é»˜è®¤ç¾¤ç»„é…ç½®æ˜¯ä¸¤åªdeepseekï¼ˆä»¥apiå½¢å¼è°ƒç”¨ï¼‰ï¼Œå½“ç„¶ä¹Ÿå¯ä»¥æ‰‹åŠ¨åŠ å…¥å…¶ä»–æˆå‘˜
+ä¿®æ”¹å·¦ä¾§è¾¹æ çš„aiè¡Œä¸ºè§„åˆ™å¯ä»¥èµ‹äºˆtaä»¬èº«ä»½ç‰¹å¾ä¸å…³ç³»
 
 English:
 This is a very simple AI chat group! It's also very easy to run!
@@ -14,4 +14,5 @@ Run configure.bat as an administrator to set up the environment (Python must alr
 Then run the run.bat file to enter the chat interface.
 
 The default group configuration consists of two DeepSeek models (called via API), but you can also manually add other members.
+
 Modifying the AI behavior rules in the left sidebar can give them character traits and relationships.
