@@ -1,0 +1,7 @@
+colorama==0.4.6
+duckduckgo_search>=7.3.0
+openai>=1.54.0
+pandas>=1.4.0,<3.0.0
+Requests>=2.32.0
+streamlit==1.54.0
+dotenv
