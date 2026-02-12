@@ -61,10 +61,8 @@ from datetime import datetime
 
 def log_conversation(member_name, model, full_prompt, raw_output):
 
-    #将对话记录导出到指定路径：E:\coding\LLM_Chatting
 
     # 1. 定义目标路径
-    # base_dir = r"E:\coding\LLM_Chatting" # 使用 r 前缀防止反斜杠转义
     # log_file = os.path.join(base_dir, "chat_optimization_log.json")
     log_file = os.path.join(current_dir, "chat_optimization_log.json") # 可移植性修改
     
@@ -142,12 +140,12 @@ def chat_with_api(member_name, prompt, context_info=""):
         )
         raw_content = response.choices[0].message.content
         # --- 核心修改：导出数据 ---
-        log_conversation(
-            member_name,
-            GLOBAL_API_CONFIG["model"],
-            full_prompt, 
-            raw_content
-        )
+#        log_conversation(
+#            member_name,
+#            GLOBAL_API_CONFIG["model"],
+#            full_prompt, 
+#            raw_content
+#        )
         # ------------------------
         return response.choices[0].message.content
     except Exception as e:
@@ -298,28 +296,29 @@ if st.session_state.running:
 
 import pandas as pd
 
-with st.sidebar:
-    st.divider()
-    if st.checkbox("📜 查看往期日志分析"):
-        # log_path = r"E:\coding\LLM_Chatting\chat_optimization_log.json"
-        log_path = os.path.join(current_dir, "chat_optimization_log.json")  # 可移植性修改
+#with st.sidebar:
+#    st.divider()
+#    if st.checkbox("📜 查看往期日志分析"):
+#        # log_path = r"E:\coding\LLM_Chatting\chat_optimization_log.json"
+#        log_path = os.path.join(current_dir, "chat_optimization_log.json")  # 可移植性修改
         
-        if os.path.exists(log_path):
-            with open(log_path, "r", encoding="utf-8") as f:
-                logs = json.load(f)
+#        if os.path.exists(log_path):
+#            with open(log_path, "r", encoding="utf-8") as f:
+#                logs = json.load(f)
             
-            # 使用表格形式快速浏览关键信息
-            df = pd.DataFrame(logs)
-            if not df.empty:
-                # 只显示时间、成员和回复简述
-                st.dataframe(df[['timestamp', 'member_name', 'raw_response']])
+#            # 使用表格形式快速浏览关键信息
+#            df = pd.DataFrame(logs)
+#            if not df.empty:
+#                # 只显示时间、成员和回复简述
+#                st.dataframe(df[['timestamp', 'member_name', 'raw_response']])
                 
-                # 允许选择某一条详细查看
-                selected_index = st.number_input("输入索引查看完整对话详情", 0, len(logs)-1, 0)
-                st.info(f"**提示词原文：**\n{logs[selected_index]['full_prompt_sent']}")
-                st.success(f"**AI 原始回复：**\n{logs[selected_index]['raw_response']}")
-        else:
-            st.warning("暂无日志文件")
+#                # 允许选择某一条详细查看
+#                selected_index = st.number_input("输入索引查看完整对话详情", 0, len(logs)-1, 0)
+#                st.info(f"**提示词原文：**\n{logs[selected_index]['full_prompt_sent']}")
+#                st.success(f"**AI 原始回复：**\n{logs[selected_index]['raw_response']}")
+#        else:
+#            st.warning("暂无日志文件")
+
 
 
 
